@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/default.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -37,17 +38,17 @@
     <div class="header-area">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-xl-3 d-flex align-items-center">
+          <div class="col-xl-3 col-lg-3 d-flex align-items-center">
             <div class="logo">
               <a href="index.html"><img src="img/logo.png" alt=""></a>
             </div>
           </div>
-          <div class="col-xl-9 align-items-center">
+          <div class="col-xl-9 col-lg-9 d-none d-lg-block align-items-center">
             <div class="hire-btn float-end">
               <a href="#">Hire Us</a>
             </div>
             <div class="main-menu float-end">
-              <nav>
+              <nav id="mobile-menu">
                 <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="#">About us</a></li>
@@ -60,16 +61,39 @@
               </nav>
             </div>
           </div>
+          <div class="col-3 d-lg-none d-block float-end"><a class="ic-menu-toggle ml-20 "><i
+                class="fa-solid fa-bars"></i></a></div>
         </div>
       </div>
     </div>
   </header>
   <!-- header area end-->
 
+  <div class="ic-sidebar-menu">
+    <button class="sidebar-close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="main-menu mobile-sidebar-menus">
+      <nav id="mobile-men">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">History</a></li>
+          <li><a href="#">Clients</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="body-overlay"></div>
+
   <!-- Slider -area start -->
   <div class="slider-area">
     <div class="slider-active">
-      <div class="single-slider d-flex align-items-center justify-content-center text-center" style="background-image:url(img/asset\ 21.jpeg)">
+      <div class="single-slider d-flex align-items-center justify-content-center text-center"
+        style="background-image:url(img/asset\ 21.jpeg)">
         <div class="slider-inner">
           <div class="slider-icon">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -82,7 +106,8 @@
           <a class="btnn" href="#">Book Now</a>
         </div>
       </div>
-      <div class="single-slider d-flex align-items-center justify-content-center text-center" style="background-image:url(img/asset\ 23.jpeg)">
+      <div class="single-slider d-flex align-items-center justify-content-center text-center"
+        style="background-image:url(img/asset\ 23.jpeg)">
         <div class="slider-inner">
           <div class="slider-icon">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -95,7 +120,8 @@
           <a class="btnn" href="#">Book Now</a>
         </div>
       </div>
-      <div class="single-slider d-flex align-items-center justify-content-center text-center" style="background-image:url(img/asset\ 21.jpeg)">
+      <div class="single-slider d-flex align-items-center justify-content-center text-center"
+        style="background-image:url(img/asset\ 21.jpeg)">
         <div class="slider-inner">
           <div class="slider-icon">
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -117,25 +143,28 @@
     <div class="container">
       <div class="feature-bg">
         <div class="row">
-          <div class="col-xl-4 d-flex align-items-center justify-content-center text-center">
+          <div class="col-xl-4 col-lg-4 col-md-4 d-flex align-items-center justify-content-center text-center">
             <div class="feature-icon">
               <i class="fa-regular fa-pen-to-square"></i>
               <h3>Branding</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the
+                industry's</p>
             </div>
           </div>
-          <div class="col-xl-4 d-flex align-items-center justify-content-center text-center">
+          <div class="col-xl-4 col-lg-4 col-md-4 d-flex align-items-center justify-content-center text-center">
             <div class="feature-icon">
               <i class="fa-regular fa-pen-to-square"></i>
               <h3>Branding</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the
+                industry's</p>
             </div>
           </div>
-          <div class="col-xl-4 d-flex align-items-center justify-content-center text-center">
+          <div class="col-xl-4 col-lg-4 col-md-4 d-flex align-items-center justify-content-center text-center">
             <div class="feature-icon">
               <i class="fa-regular fa-pen-to-square"></i>
               <h3>Branding</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry's</p>
+              <p>Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the
+                industry's</p>
             </div>
           </div>
         </div>
@@ -144,438 +173,457 @@
   </div>
   <!-- feature area end -->
 
-    <!-- about area start -->
-    <div class="about-area mb-80 mt-80">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-xl-6 ">
-            <div class="about-content">
-              <h3>Our Mission</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus distinctio iure dolores aliquam repellat, quod nostrum esse? Ratione cupiditate fuga pariatur, sunt suscipit excepturi autem a nesciunt sapiente repellendus quam recusandae sequi temporibus? Dolor eaque cum labore. Possimus, nostrum ipsa cum nam adipisci tempore dolore sed odio harum neque quasi?</p>
-              <a href="#" class="btn">Read More</a>
-            </div>
+  <!-- about area start -->
+  <div class="about-area mb-80 mt-80">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-content mb-30">
+            <h3>Our Mission</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus distinctio iure dolores aliquam
+              repellat, quod nostrum esse? Ratione cupiditate fuga pariatur, sunt suscipit excepturi autem a nesciunt
+              sapiente repellendus quam recusandae sequi temporibus? Dolor eaque cum labore. Possimus, nostrum ipsa cum
+              nam adipisci tempore dolore sed odio harum neque quasi?</p>
+            <a href="#" class="btn">Read More</a>
           </div>
-          <div class="col-xl-6">
-            <div class="about-img">
-              <img src="img/about.png" alt="">
-            </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <div class="about-img">
+            <img src="img/about.png" alt="">
           </div>
         </div>
       </div>
     </div>
-    <!-- about area end -->
+  </div>
+  <!-- about area end -->
 
-    <!-- subscript area start -->
-    <div class="subscript-area pt-100 pb-100 mb-80 mt-80 " style="background-image: url(img/video_01.jpg);">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="sub-title text-center">
-              <h3>Latest stories in your inbox</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptates?</p>
-            </div>
+  <!-- subscript area start -->
+  <div class="subscript-area pt-100 pb-100 mb-80 mt-80 " style="background-image: url(img/video_01.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="sub-title text-center">
+            <h3>Latest stories in your inbox</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptates?</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-10 offset-xl-1">
-            <div class="subscript-input">
-              <form action="#">
-                <input type="text" placeholder="Your name">
-                <input type="email" placeholder="Your email">
-                <input type="text" placeholder="Subject">
-                <button type="text">Subcribe</button>
-              </form>
-            </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1">
+          <div class="subscript-input">
+            <form action="#">
+              <input type="text" placeholder="Your name">
+              <input type="email" placeholder="Your email">
+              <input type="text" placeholder="Subject">
+              <button type="text">Subcribe</button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- subscript area end -->
+  </div>
+  <!-- subscript area end -->
 
-    <!-- service area start -->
-    <div class="service-area mt-80 mb-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3 text-center">
-            <div class="service-content">
-              <i class="fa-solid fa-desktop"></i>
-              <h3>Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet praesentium in hic quam dolorum iusto accusamus.</p>
-              <a href="#" class="btn">View Services</a>
-            </div>
+  <!-- service area start -->
+  <div class="service-area mt-80 mb-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 text-center">
+          <div class="service-content mb-30">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet
+              praesentium in hic quam dolorum iusto accusamus.</p>
+            <a href="#" class="btn">View Services</a>
           </div>
-          <div class="col-xl-3 text-center">
-            <div class="service-content">
-              <i class="fa-solid fa-desktop"></i>
-              <h3>Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet praesentium in hic quam dolorum iusto accusamus.</p>
-              <a href="#" class="btn">View Services</a>
-            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 text-center">
+          <div class="service-content mb-30">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet
+              praesentium in hic quam dolorum iusto accusamus.</p>
+            <a href="#" class="btn">View Services</a>
           </div>
-          <div class="col-xl-3 text-center">
-            <div class="service-content">
-              <i class="fa-solid fa-desktop"></i>
-              <h3>Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet praesentium in hic quam dolorum iusto accusamus.</p>
-              <a href="#" class="btn">View Services</a>
-            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 text-center">
+          <div class="service-content mb-30">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet
+              praesentium in hic quam dolorum iusto accusamus.</p>
+            <a href="#" class="btn">View Services</a>
           </div>
-          <div class="col-xl-3 text-center">
-            <div class="service-content">
-              <i class="fa-solid fa-desktop"></i>
-              <h3>Development</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet praesentium in hic quam dolorum iusto accusamus.</p>
-              <a href="#" class="btn">View Services</a>
-            </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 text-center">
+          <div class="service-content mb-30">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium doloribus culpa eveniet
+              praesentium in hic quam dolorum iusto accusamus.</p>
+            <a href="#" class="btn">View Services</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- service area end -->
+  </div>
+  <!-- service area end -->
 
-    <!-- Pricing area start -->
-    <div class="pricing-area pt-90 pb-90">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="sub-title black text-center">
-              <h3>Our Pricing</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, excepturi.</p>
-            </div>
+  <!-- Pricing area start -->
+  <div class="pricing-area pt-90 pb-90">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="sub-title black text-center">
+            <h3>Our Pricing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, excepturi.</p>
           </div>
         </div>
-        <div class="row justify-content-between">
-          <div class="pricing-wrapper">
-            <div class="pracing-item text-center">
-              <h3>Basic</h3>
-              <span>10 <span>$</span><strong>Per Month</strong></span>
-              <ul>
-                <li>10 GB Disk Space</li>
-                <li>15 Domain Names</li>
-                <li>4 Email Address</li>
-                <li>Enhanced Security</li>
-                <li>Unlimited Support</li>
-              </ul>
-              <a href="#" class="btn">Purchase Now</a>
-            </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="pricing-wrapper">
+          <div class="pracing-item text-center">
+            <h3>Basic</h3>
+            <span>10 <span>$</span><strong>Per Month</strong></span>
+            <ul>
+              <li>10 GB Disk Space</li>
+              <li>15 Domain Names</li>
+              <li>4 Email Address</li>
+              <li>Enhanced Security</li>
+              <li>Unlimited Support</li>
+            </ul>
+            <a href="#" class="btn">Purchase Now</a>
           </div>
-          <div class="pricing-wrapper">
-            <div class="pracing-item text-center">
-              <h3>Basic</h3>
-              <span>10 <span>$</span><strong>Per Month</strong></span>
-              <ul>
-                <li>10 GB Disk Space</li>
-                <li>15 Domain Names</li>
-                <li>4 Email Address</li>
-                <li>Enhanced Security</li>
-                <li>Unlimited Support</li>
-              </ul>
-              <a href="#" class="btn">Purchase Now</a>
-            </div>
+        </div>
+        <div class="pricing-wrapper">
+          <div class="pracing-item text-center">
+            <h3>Basic</h3>
+            <span>10 <span>$</span><strong>Per Month</strong></span>
+            <ul>
+              <li>10 GB Disk Space</li>
+              <li>15 Domain Names</li>
+              <li>4 Email Address</li>
+              <li>Enhanced Security</li>
+              <li>Unlimited Support</li>
+            </ul>
+            <a href="#" class="btn">Purchase Now</a>
           </div>
-          <div class="pricing-wrapper">
-            <div class="pracing-item text-center">
-              <h3>Basic</h3>
-              <span>10 <span>$</span><strong>Per Month</strong></span>
-              <ul>
-                <li>10 GB Disk Space</li>
-                <li>15 Domain Names</li>
-                <li>4 Email Address</li>
-                <li>Enhanced Security</li>
-                <li>Unlimited Support</li>
-              </ul>
-              <a href="#" class="btn">Purchase Now</a>
-            </div>
+        </div>
+        <div class="pricing-wrapper">
+          <div class="pracing-item text-center">
+            <h3>Basic</h3>
+            <span>10 <span>$</span><strong>Per Month</strong></span>
+            <ul>
+              <li>10 GB Disk Space</li>
+              <li>15 Domain Names</li>
+              <li>4 Email Address</li>
+              <li>Enhanced Security</li>
+              <li>Unlimited Support</li>
+            </ul>
+            <a href="#" class="btn">Purchase Now</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- Pricing area end -->
+  </div>
+  <!-- Pricing area end -->
 
-    <!-- counter area start -->
-    <div class="counter-area theme-bg pt-70 pb-30">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3">
-            <div class="counter-wrapper text-center mb-30">
-              <div class="counter-item">
-                <i class="fa-solid fa-users"></i>
-                <span class="counter">35,000</span>
-                <p>Happy Clients</p>
-              </div>
+  <!-- counter area start -->
+  <div class="counter-area theme-bg pt-70 pb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-item">
+              <i class="fa-solid fa-users"></i>
+              <span class="counter">35,000</span>
+              <p>Happy Clients</p>
             </div>
           </div>
-          <div class="col-xl-3">
-            <div class="counter-wrapper text-center mb-30">
-              <div class="counter-item">
-                <i class="fa-solid fa-briefcase"></i>
-                <span class="counter">937</span>
-                <p>Projects Compleated
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <span class="counter">937</span>
+              <p>Projects Compleated
+              </p>
             </div>
           </div>
-          <div class="col-xl-3">
-            <div class="counter-wrapper text-center mb-30">
-              <div class="counter-item">
-                <i class="fa-solid fa-brain"></i>
-                <span class="counter">467</span>
-                <p>Business Partners
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-item">
+              <i class="fa-solid fa-brain"></i>
+              <span class="counter">467</span>
+              <p>Business Partners
+              </p>
             </div>
           </div>
-          <div class="col-xl-3">
-            <div class="counter-wrapper text-center mb-30">
-              <div class="counter-item">
-                <i class="fa-solid fa-arrow-up-right-dots"></i>
-                <span class="counter">4946</span>
-                <p>Liens Of Code
-                </p>
-              </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="counter-wrapper text-center mb-30">
+            <div class="counter-item">
+              <i class="fa-solid fa-arrow-up-right-dots"></i>
+              <span class="counter">4946</span>
+              <p>Liens Of Code
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- counter area end-->
-    <!-- team area start -->
-    <div class="team-area mt-70 mb-30">
-      <div class="container-custom">
-        <div class="row gx-0">
-          <div class="col-xl-3">
-            <div class="team-wrapper text-center">
-              <div class="team-img">
-                <img src="img/project/4.jpg" alt="">
-              </div>
-              <div class="team-content">
-                <h3>Alex Smith.</h3>
-                <p>Project Manager</p>
-                <div class="team-icon">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-google"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
+  </div>
+  <!-- counter area end-->
+  <!-- team area start -->
+  <div class="team-area mt-70 mb-30">
+    <div class="container-custom">
+      <div class="row gx-0">
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <div class="team-wrapper text-center">
+            <div class="team-img">
+              <img src="img/project/4.jpg" alt="">
             </div>
-          </div>
-          <div class="col-xl-3">
-            <div class="team-wrapper text-center">
-              <div class="team-img">
-                <img src="img/project/2.jpg" alt="">
-              </div>
-              <div class="team-content">
-                <h3>Alex Smith.</h3>
-                <p>Project Manager</p>
-                <div class="team-icon">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-google"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3">
-            <div class="team-wrapper text-center">
-              <div class="team-img">
-                <img src="img/project/3.jpg" alt="">
-              </div>
-              <div class="team-content">
-                <h3>Alex Smith.</h3>
-                <p>Project Manager</p>
-                <div class="team-icon">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-google"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3">
-            <div class="team-wrapper text-center">
-              <div class="team-img">
-                <img src="img/project/4.jpg" alt="">
-              </div>
-              <div class="team-content">
-                <h3>Alex Smith.</h3>
-                <p>Project Manager</p>
-                <div class="team-icon">
-                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-google"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- team area end -->
-
-    <!-- blog area start -->
-    <div class="blog-area mt-70 mb-30">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="sub-title black text-center">
-              <h3>Latest Our News</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptates?</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-4">
-            <div class="letest-blog mb-30">
-              <div class="blog-img">
-                <img src="img/post/1.jpg" alt="">
-              </div>
-              <div class="blog-conten">
-                <h3>Managing Their Own Websites</h3>
-                <div class="meta-blog">
-                  <span>07 May </span>
-                  <span class="line"></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt assumenda. Obcaecati, facere qui. Quam ipsam delectus cumque explicabo reiciendis labore corrupti provident culpa eius. Similique explicabo quo provident dignissimos.</p>
-                <a href="#" class="btn">Continue Reading</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4">
-            <div class="letest-blog mb-30">
-              <div class="blog-img">
-                <img src="img/post/2.jpg" alt="">
-              </div>
-              <div class="blog-conten">
-                <h3>Managing Their Own Websites</h3>
-                <div class="meta-blog">
-                  <span>07 May </span>
-                  <span class="line"></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt assumenda. Obcaecati, facere qui. Quam ipsam delectus cumque explicabo reiciendis labore corrupti provident culpa eius. Similique explicabo quo provident dignissimos.</p>
-                <a href="#" class="btn">Continue Reading</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4">
-            <div class="letest-blog mb-30">
-              <div class="blog-img">
-                <img src="img/post/3.jpg" alt="">
-              </div>
-              <div class="blog-conten">
-                <h3>Managing Their Own Websites</h3>
-                <div class="meta-blog">
-                  <span>07 May </span>
-                  <span class="line"></span>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt assumenda. Obcaecati, facere qui. Quam ipsam delectus cumque explicabo reiciendis labore corrupti provident culpa eius. Similique explicabo quo provident dignissimos.</p>
-                <a href="#" class="btn">Continue Reading</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- blog area end -->
-
-    <!-- testimonial area start -->
-    <div class="testimonial-area pt-100 pb-100" style="background-image: url(img/3\ \(1\).jpg);">
-      <div class="container-fluid">
-        <div class="row">
-            <div class="col-xl-10 offset-xl-1">
-              <div class="testimonial-active">
-                <div class="testimonial-wrapper">
-                  <div class="testimonial-item align-items-center justify-content-center text-center">
-                    <img src="img/1.jpg" alt="">
-                    <h3>Alex Smith</h3>
-                    <span>Envato Customer</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti qui aliquid praesentium illum dicta quam,<br> aperiam, voluptate quae ea quasi repellendus saepe dolorum magni pariatur vitae odit quod doloremque.</p>
-                  </div>
-                </div>
-                <div class="testimonial-wrapper">
-                  <div class="testimonial-item align-items-center justify-content-center text-center">
-                    <img src="img/2.jpg" alt="">
-                    <h3>Alex Smith</h3>
-                    <span>Envato Customer</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti qui aliquid praesentium illum dicta quam,<br> aperiam, voluptate quae ea quasi repellendus saepe dolorum magni pariatur vitae odit quod doloremque.</p>
-                  </div>
-                </div>
-                <div class="testimonial-wrapper">
-                  <div class="testimonial-item align-items-center justify-content-center text-center">
-                    <img src="img/3.jpg" alt="">
-                    <h3>Alex Smith</h3>
-                    <span>Envato Customer</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti qui aliquid praesentium illum dicta quam,<br> aperiam, voluptate quae ea quasi repellendus saepe dolorum magni pariatur vitae odit quod doloremque.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <!-- testimonial area end -->
-
-    <!-- client area start -->
-    <div class="client-area gray-bg pt-70 pb-70">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-2">
-            <div class="client-wrapper">
-              <img src="img/1.png" alt="">
-            </div>
-          </div>
-          <div class="col-xl-2">
-            <div class="client-wrapper">
-              <img src="img/2.png" alt="">
-            </div>
-          </div>
-          <div class="col-xl-2">
-            <div class="client-wrapper">
-              <img src="img/3.png" alt="">
-            </div>
-          </div>
-          <div class="col-xl-2">
-            <div class="client-wrapper">
-              <img src="img/4.png" alt="">
-            </div>
-          </div>
-          <div class="col-xl-2">
-            <div class="client-wrapper">
-              <img src="img/5.png" alt="">
-            </div>
-          </div>
-          <div class="col-xl-2">
-            <div class="client-wrapper">
-              <img src="img/6.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- client area end -->
-    <!-- footer area start -->
-    <div class="footer-area pt-70 pb-30">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-6 offset-3">
-            <div class="footer-wrapper text-center">
-              <img src="img/logo.png" alt="">
-              <div class="footer-icon">
+            <div class="team-content">
+              <h3>Alex Smith.</h3>
+              <p>Project Manager</p>
+              <div class="team-icon">
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-google"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
               </div>
-              <p>© 2018 UI-ThemeZ. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <div class="team-wrapper text-center">
+            <div class="team-img">
+              <img src="img/project/2.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Alex Smith.</h3>
+              <p>Project Manager</p>
+              <div class="team-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <div class="team-wrapper text-center">
+            <div class="team-img">
+              <img src="img/project/3.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Alex Smith.</h3>
+              <p>Project Manager</p>
+              <div class="team-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6">
+          <div class="team-wrapper text-center">
+            <div class="team-img">
+              <img src="img/project/4.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3>Alex Smith.</h3>
+              <p>Project Manager</p>
+              <div class="team-icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- footer area end -->
+  </div>
+  <!-- team area end -->
+
+  <!-- blog area start -->
+  <div class="blog-area mt-70 mb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="sub-title black text-center">
+            <h3>Latest Our News</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, voluptates?</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="letest-blog mb-30">
+            <div class="blog-img">
+              <img src="img/post/1.jpg" alt="">
+            </div>
+            <div class="blog-conten">
+              <h3>Managing Their Own Websites</h3>
+              <div class="meta-blog">
+                <span>07 May </span>
+                <span class="line"></span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt assumenda. Obcaecati,
+                facere qui. Quam ipsam delectus cumque explicabo reiciendis labore corrupti provident culpa eius.
+                Similique explicabo quo provident dignissimos.</p>
+              <a href="#" class="btn">Continue Reading</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="letest-blog mb-30">
+            <div class="blog-img">
+              <img src="img/post/2.jpg" alt="">
+            </div>
+            <div class="blog-conten">
+              <h3>Managing Their Own Websites</h3>
+              <div class="meta-blog">
+                <span>07 May </span>
+                <span class="line"></span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt assumenda. Obcaecati,
+                facere qui. Quam ipsam delectus cumque explicabo reiciendis labore corrupti provident culpa eius.
+                Similique explicabo quo provident dignissimos.</p>
+              <a href="#" class="btn">Continue Reading</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-6">
+          <div class="letest-blog mb-30">
+            <div class="blog-img">
+              <img src="img/post/3.jpg" alt="">
+            </div>
+            <div class="blog-conten">
+              <h3>Managing Their Own Websites</h3>
+              <div class="meta-blog">
+                <span>07 May </span>
+                <span class="line"></span>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, nesciunt assumenda. Obcaecati,
+                facere qui. Quam ipsam delectus cumque explicabo reiciendis labore corrupti provident culpa eius.
+                Similique explicabo quo provident dignissimos.</p>
+              <a href="#" class="btn">Continue Reading</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- blog area end -->
+
+  <!-- testimonial area start -->
+  <div class="testimonial-area pt-100 pb-100" style="background-image: url(img/3\ \(1\).jpg);">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-10 offset-xl-1">
+          <div class="testimonial-active">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-item align-items-center justify-content-center text-center">
+                <img src="img/1.jpg" alt="">
+                <h3>Alex Smith</h3>
+                <span>Envato Customer</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti qui aliquid praesentium illum
+                  dicta quam,<br> aperiam, voluptate quae ea quasi repellendus saepe dolorum magni pariatur vitae odit
+                  quod doloremque.</p>
+              </div>
+            </div>
+            <div class="testimonial-wrapper">
+              <div class="testimonial-item align-items-center justify-content-center text-center">
+                <img src="img/2.jpg" alt="">
+                <h3>Alex Smith</h3>
+                <span>Envato Customer</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti qui aliquid praesentium illum
+                  dicta quam,<br> aperiam, voluptate quae ea quasi repellendus saepe dolorum magni pariatur vitae odit
+                  quod doloremque.</p>
+              </div>
+            </div>
+            <div class="testimonial-wrapper">
+              <div class="testimonial-item align-items-center justify-content-center text-center">
+                <img src="img/3.jpg" alt="">
+                <h3>Alex Smith</h3>
+                <span>Envato Customer</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel corrupti qui aliquid praesentium illum
+                  dicta quam,<br> aperiam, voluptate quae ea quasi repellendus saepe dolorum magni pariatur vitae odit
+                  quod doloremque.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- testimonial area end -->
+
+  <!-- client area start -->
+  <div class="client-area gray-bg pt-70 pb-70">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-2 col-lg-2 col-3">
+          <div class="client-wrapper">
+            <img src="img/1.png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-3">
+          <div class="client-wrapper">
+            <img src="img/2.png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-3">
+          <div class="client-wrapper">
+            <img src="img/3.png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-3">
+          <div class="client-wrapper">
+            <img src="img/4.png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-3">
+          <div class="client-wrapper">
+            <img src="img/5.png" alt="">
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-3">
+          <div class="client-wrapper">
+            <img src="img/6.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- client area end -->
+  <!-- footer area start -->
+  <div class="footer-area pt-70 pb-30">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 offset-xl-3  col-lg-12">
+          <div class="footer-wrapper text-center">
+            <img src="img/logo.png" alt="">
+            <div class="footer-icon">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p>© 2018 UI-ThemeZ. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer area end -->
 
 
 
@@ -592,6 +640,7 @@
   <script src="js/slick.min.js"></script>
   <script src="js/waypoints.min.js"></script>
   <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/jquery.meanmenu.min.js"></script>
   <script src="js/vendor/modernizr-3.12.0.min.js"></script>
   <script src="js/app.js"></script>
 
